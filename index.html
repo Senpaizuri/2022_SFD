@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storytelling for data 2022/23 - Maikel Sleebos</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="./app.js" type="module" defer></script>
+</head>
+
+<body class="app" data-step="0">
+    <div class="app__overlay">
+        <button class="app__overlay--close js-close">Continue</button>
+        <section>
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 747.94 201.68">
+                <path
+                    fill="currentColor"
+                    d="M74.68 0c3.95.72 7.94 1.23 11.83 2.18 27.61 6.74 43.51 24.85 49.11 52.02 4.42 21.46 3.49 42.84-5.54 63.16-10.44 23.51-29.21 36.21-54.6 37.48-23.81 1.19-47.71.49-71.58.63-1.31 0-2.61.15-3.91.23V48.47h34.1v4.44c0 23.51.04 47.03-.05 70.54 0 2.54.52 3.53 3.32 3.48 8.69-.18 17.4 0 26.09-.08 19.85-.18 33.04-9.62 37.86-27.58 4.04-15.06 3.53-30.21-1.22-45.03C96.15 41.91 87.75 33.71 75 30.76c-5.75-1.33-11.77-2.01-17.68-2.09-19.11-.28-38.23-.16-57.34-.19V0h74.68ZM720.11 62.23V48.82h27.82v3.15c0 34.12.01 68.25 0 102.37-.01 24.92-15.02 42.3-39.69 46.1-13.93 2.14-27.62 1.97-40.67-4.15-11.21-5.25-19.17-13.31-21.76-25.82-.28-1.34-.25-2.73-.41-4.53h10.57c5.36 0 10.73-.07 16.09.08.93.03 2.41.78 2.66 1.52 3.82 11.36 13.98 15.19 22.69 14.59 12.02-.82 19.57-7.09 21.51-18.84 1.45-8.77 1.23-17.81 1.76-26.73-.47-.25-.95-.49-1.42-.74-.28.62-.47 1.3-.85 1.85-6.03 8.76-14.76 13.17-25 14.15-5.84.56-11.97.28-17.73-.84-13.34-2.59-22.95-10.63-28.13-23.03-8.11-19.42-8.47-39.09.91-58.29 8.2-16.78 25.03-25.48 43.69-23.77 11.95 1.1 21.15 6.18 27.99 16.35Zm.23 35.06c-.69-3.17-1.4-9.24-3.37-14.88-3.3-9.45-11.04-14.5-20.88-14.67-10.36-.18-17.93 4.35-21.8 13.73-5.02 12.18-4.68 24.49.8 36.41 7.63 16.58 27.93 14.73 36.34 6.08 6.5-6.68 8.48-14.9 8.9-26.67ZM501.22 48.68h30.09c-2.18 6.97-4.29 13.77-6.44 20.56-8.79 27.76-17.62 55.51-26.31 83.3-.7 2.25-1.64 3.01-3.97 2.97-7.99-.13-15.99-.17-23.98.02-2.55.06-3.49-.83-4.1-3.17-5.64-21.54-11.38-43.06-17.1-64.58-.3-1.12-.64-2.23-1.7-3.38-.69 2.54-1.41 5.06-2.05 7.61-5.13 20.22-10.27 40.43-15.32 60.67-.54 2.16-1.47 2.86-3.7 2.82-8.3-.14-16.6-.09-24.89-.03-1.69.01-2.74-.29-3.33-2.15-10.86-34.29-21.78-68.56-32.69-102.84-.15-.47-.16-.98-.27-1.69h30.71c6.49 23.87 13.03 47.92 19.56 71.97l.74.03c5.91-24.03 11.82-48.05 17.77-72.2 9.13 0 18.03-.05 26.92.1.72.01 1.82 1.33 2.05 2.22 4.52 17.56 8.93 35.16 13.37 52.74 1.43 5.65 2.89 11.29 5.02 17.01 6.52-23.94 13.05-47.87 19.62-71.98ZM633.65 109h-74.21c-3.9 0-3.91 0-3.46 3.76.15 1.3.33 2.6.6 3.88 2.44 11.62 8.51 17.57 20.26 19.33 10.14 1.53 19.6-.65 25.78-9.09 2.96-4.04 5.77-4.55 9.88-4.43 6.04.18 12.09.05 18.67.05-.78 2.06-1.37 3.74-2.05 5.38-8.01 19.17-22.54 29.09-43.22 30.25-12.35.69-24.24-.97-34.99-7.55-13.34-8.17-20.67-20.41-23.36-35.53-2.65-14.92-1.32-29.41 6.34-42.78 9.15-15.97 23.22-24.5 41.5-26.22 12.9-1.21 25.01 1.05 35.67 8.75 12.16 8.78 18.39 21.21 20.87 35.61 1.02 5.92 1.15 11.99 1.73 18.6Zm-30.2-18.67c-1.5-15.65-11.12-23.76-26.36-22.51-12.02.98-21.78 11.33-21.03 22.51h47.39ZM147.06 48.73h29.18c.07 1.13.19 2.28.19 3.43.06 20.39.06 40.79.2 61.18.02 2.79.51 5.63 1.17 8.36 2.25 9.28 7.81 13.51 17.4 13.52 11.92 0 18.6-4.65 21.34-15.22.85-3.29 1.46-6.75 1.49-10.14.19-19.08.16-38.16.21-57.24v-3.81h29.15v106.37h-27.74v-14.97c-1.1 1.31-1.61 1.88-2.07 2.48-7.76 10.31-18.13 15.67-31.02 15.4-5.9-.12-12-.64-17.62-2.29-12.85-3.78-18.67-13.75-20.62-26.25-.81-5.16-1.17-10.44-1.21-15.66-.13-20.4-.05-40.79-.05-61.19v-3.98ZM293.82 155.23h-29V48.83h27.51v14.81c.98-.94 1.51-1.32 1.88-1.81 9.03-12.23 21.33-17.07 36.23-15.85 3.71.3 7.47.75 11.05 1.7 13.04 3.46 19.78 12.68 22.01 25.4.97 5.53 1.37 11.22 1.41 16.85.16 20.8.07 41.6.06 62.4 0 .9-.09 1.79-.15 2.9h-29.01v-3.54c-.04-19.69.05-39.38-.22-59.06-.06-4.36-.94-8.84-2.22-13.03-2.08-6.8-7.18-10.26-14.26-10.69-7.18-.43-14.01.36-19.13 6.23-3.46 3.97-4.77 8.85-5.48 13.88-.47 3.28-.65 6.63-.66 9.95-.06 17.47-.03 34.94-.03 52.4v3.86Z" />
+            </svg>
+            <span>subtitle</span>
+            <br>
+            <br>
+            <span>
+                <i>
+                    Story telling for data 22/23<br>
+                    Maikel Sleebos 500730177
+                </i>
+            </span>
+        </section>
+    </div>
+    <main class="app__content hidden">
+        <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 747.94 201.68">
+            <path
+                fill="currentColor"
+                d="M74.68 0c3.95.72 7.94 1.23 11.83 2.18 27.61 6.74 43.51 24.85 49.11 52.02 4.42 21.46 3.49 42.84-5.54 63.16-10.44 23.51-29.21 36.21-54.6 37.48-23.81 1.19-47.71.49-71.58.63-1.31 0-2.61.15-3.91.23V48.47h34.1v4.44c0 23.51.04 47.03-.05 70.54 0 2.54.52 3.53 3.32 3.48 8.69-.18 17.4 0 26.09-.08 19.85-.18 33.04-9.62 37.86-27.58 4.04-15.06 3.53-30.21-1.22-45.03C96.15 41.91 87.75 33.71 75 30.76c-5.75-1.33-11.77-2.01-17.68-2.09-19.11-.28-38.23-.16-57.34-.19V0h74.68ZM720.11 62.23V48.82h27.82v3.15c0 34.12.01 68.25 0 102.37-.01 24.92-15.02 42.3-39.69 46.1-13.93 2.14-27.62 1.97-40.67-4.15-11.21-5.25-19.17-13.31-21.76-25.82-.28-1.34-.25-2.73-.41-4.53h10.57c5.36 0 10.73-.07 16.09.08.93.03 2.41.78 2.66 1.52 3.82 11.36 13.98 15.19 22.69 14.59 12.02-.82 19.57-7.09 21.51-18.84 1.45-8.77 1.23-17.81 1.76-26.73-.47-.25-.95-.49-1.42-.74-.28.62-.47 1.3-.85 1.85-6.03 8.76-14.76 13.17-25 14.15-5.84.56-11.97.28-17.73-.84-13.34-2.59-22.95-10.63-28.13-23.03-8.11-19.42-8.47-39.09.91-58.29 8.2-16.78 25.03-25.48 43.69-23.77 11.95 1.1 21.15 6.18 27.99 16.35Zm.23 35.06c-.69-3.17-1.4-9.24-3.37-14.88-3.3-9.45-11.04-14.5-20.88-14.67-10.36-.18-17.93 4.35-21.8 13.73-5.02 12.18-4.68 24.49.8 36.41 7.63 16.58 27.93 14.73 36.34 6.08 6.5-6.68 8.48-14.9 8.9-26.67ZM501.22 48.68h30.09c-2.18 6.97-4.29 13.77-6.44 20.56-8.79 27.76-17.62 55.51-26.31 83.3-.7 2.25-1.64 3.01-3.97 2.97-7.99-.13-15.99-.17-23.98.02-2.55.06-3.49-.83-4.1-3.17-5.64-21.54-11.38-43.06-17.1-64.58-.3-1.12-.64-2.23-1.7-3.38-.69 2.54-1.41 5.06-2.05 7.61-5.13 20.22-10.27 40.43-15.32 60.67-.54 2.16-1.47 2.86-3.7 2.82-8.3-.14-16.6-.09-24.89-.03-1.69.01-2.74-.29-3.33-2.15-10.86-34.29-21.78-68.56-32.69-102.84-.15-.47-.16-.98-.27-1.69h30.71c6.49 23.87 13.03 47.92 19.56 71.97l.74.03c5.91-24.03 11.82-48.05 17.77-72.2 9.13 0 18.03-.05 26.92.1.72.01 1.82 1.33 2.05 2.22 4.52 17.56 8.93 35.16 13.37 52.74 1.43 5.65 2.89 11.29 5.02 17.01 6.52-23.94 13.05-47.87 19.62-71.98ZM633.65 109h-74.21c-3.9 0-3.91 0-3.46 3.76.15 1.3.33 2.6.6 3.88 2.44 11.62 8.51 17.57 20.26 19.33 10.14 1.53 19.6-.65 25.78-9.09 2.96-4.04 5.77-4.55 9.88-4.43 6.04.18 12.09.05 18.67.05-.78 2.06-1.37 3.74-2.05 5.38-8.01 19.17-22.54 29.09-43.22 30.25-12.35.69-24.24-.97-34.99-7.55-13.34-8.17-20.67-20.41-23.36-35.53-2.65-14.92-1.32-29.41 6.34-42.78 9.15-15.97 23.22-24.5 41.5-26.22 12.9-1.21 25.01 1.05 35.67 8.75 12.16 8.78 18.39 21.21 20.87 35.61 1.02 5.92 1.15 11.99 1.73 18.6Zm-30.2-18.67c-1.5-15.65-11.12-23.76-26.36-22.51-12.02.98-21.78 11.33-21.03 22.51h47.39ZM147.06 48.73h29.18c.07 1.13.19 2.28.19 3.43.06 20.39.06 40.79.2 61.18.02 2.79.51 5.63 1.17 8.36 2.25 9.28 7.81 13.51 17.4 13.52 11.92 0 18.6-4.65 21.34-15.22.85-3.29 1.46-6.75 1.49-10.14.19-19.08.16-38.16.21-57.24v-3.81h29.15v106.37h-27.74v-14.97c-1.1 1.31-1.61 1.88-2.07 2.48-7.76 10.31-18.13 15.67-31.02 15.4-5.9-.12-12-.64-17.62-2.29-12.85-3.78-18.67-13.75-20.62-26.25-.81-5.16-1.17-10.44-1.21-15.66-.13-20.4-.05-40.79-.05-61.19v-3.98ZM293.82 155.23h-29V48.83h27.51v14.81c.98-.94 1.51-1.32 1.88-1.81 9.03-12.23 21.33-17.07 36.23-15.85 3.71.3 7.47.75 11.05 1.7 13.04 3.46 19.78 12.68 22.01 25.4.97 5.53 1.37 11.22 1.41 16.85.16 20.8.07 41.6.06 62.4 0 .9-.09 1.79-.15 2.9h-29.01v-3.54c-.04-19.69.05-39.38-.22-59.06-.06-4.36-.94-8.84-2.22-13.03-2.08-6.8-7.18-10.26-14.26-10.69-7.18-.43-14.01.36-19.13 6.23-3.46 3.97-4.77 8.85-5.48 13.88-.47 3.28-.65 6.63-.66 9.95-.06 17.47-.03 34.94-.03 52.4v3.86Z" />
+        </svg>
+        <div class="app__column">
+            <svg xmlns="http://www.w3.org/2000/svg" class="map" viewBox="0 0 1904.92 1000">
+                <defs>
+                    <style>
+                        .cls-2,
+                        .cls-4 {
+                            fill: #5d576b;
+                            font-family: Lato-Bold, Lato;
+                            font-weight: 700
+                        }
+
+                        .cls-2 {
+                            font-size: 13.48px
+                        }
+
+                        .cls-6 {
+                            fill: #e6cac8
+                        }
+
+                        .cls-7 {
+                            fill: #efddd5
+                        }
+
+                        .cls-8 {
+                            fill: #81667a
+                        }
+
+                        .cls-9 {
+                            fill: #c2c2b5
+                        }
+
+                        .cls-10 {
+                            fill: #b79fbc
+                        }
+
+                        .cls-12 {
+                            fill: #d1cfc1
+                        }
+
+                        .cls-4 {
+                            font-size: 8.34px
+                        }
+
+                        .cls-15 {
+                            fill: none;
+                            stroke: #000;
+                            stroke-linecap: round;
+                            stroke-linejoin: round;
+                            stroke-width: 2px
+                        }
+
+                        .cls-23 {
+                            opacity: .5;
+                            fill: #fff
+                        }
+                    </style>
+                </defs>
+                <g id="base">
+                    <g id="floor">
+                        <path d="M1904.92 413.92 780.44 976.16 0 585.94 1124.48 23.7l780.44 390.22z"
+                            style="fill:#f1f1f1" />
+                        <path d="m965.74 408.25 443.49 221.74-628.84 314.44L336.9 722.69l628.84-314.44z"
+                            style="opacity:.5;fill:#d8dbe1" />
+                        <path
+                            d="m171.88 671.88-54.14-27.07 763.92-381.96 54.13 27.07-763.91 381.96zM972.72 271.46l-54.14-27.07 323.46-161.73 54.14 27.07-323.46 161.73z"
+                            class="cls-12" />
+                        <path d="m800.84 161.73 117.74 82.66-117.74-58.87v-23.79z" style="fill:#adaea6" />
+                        <path
+                            d="m918.58 244.39 323.46-161.73L1124.3 0 800.84 161.73l117.74 82.66zM117.74 644.81l763.92-381.96-117.74-82.66L0 562.15l117.74 82.66z"
+                            class="cls-9" />
+                        <path d="M780.44 976.16V1000L0 609.78v-23.84l780.44 390.22z" class="cls-8" />
+                        <path d="M1904.92 413.92v23.84L780.44 1000v-23.84l1124.48-562.24z" style="fill:#5d576b" />
+                        <path d="M0 562.15v23.79l117.74 58.87L0 562.15z" class="cls-8" />
+                    </g>
+                    <g id="grass">
+                        <path
+                            d="m1184.7 298.78 31.7-15.85 292.11 146.05-31.7 15.85-292.11-146.05zM1873.17 398.04l31.7 15.85L780.39 976.13l-31.7-15.85 1124.48-562.24z"
+                            class="cls-12" />
+                        <path
+                            d="m780.39 944.43-31.7 15.85-443.5-221.75 31.7-15.85 443.5 221.75zM274.9 691.68l-31.7 15.85-71.32-35.65 31.7-15.85 71.32 35.65zM1440.95 614.15l-31.7 15.85-73.55-36.78 31.7-15.85 73.55 36.78zM1071.01 429.18l-31.7 15.85-73.56-36.78 31.7-15.85 73.56 36.78zM678.68 625.34l-31.7 15.85-73.56-36.77 31.7-15.85 73.56 36.77zM467.65 731.85l-53.62-26.81 144.74-72.37 53.62 26.81-144.74 72.37z"
+                            class="cls-12" />
+                    </g>
+                </g>
+                <g id="building">
+                    <g id="bottom_floor">
+                        <path id="floor-2"
+                            d="m1055.13 807.08-60.41 30.2-67.03-33.52 53.99-27-107.77-53.88-234.54 117.27-76.2-38.1.01-.01-50.48-25.23h-.01l-22.51-11.26 22.51-11.26-24.92-12.46-39.7 19.85-6.48-3.24 39.71-19.85h-.01l144.72-72.36 24.92 12.46 176.39-88.19-54.21-27.11h.01l-6.49-3.24 156.38-78.19 91.1 45.55 52.39-26.2 16.04-8.02 6.48-3.24 68.58 34.3 58.48 29.24h.01l30.75 15.37-.01.01 8.22 4.11.01-.01 30.75 15.38h-.01l78.7 39.35-333.97 166.98 24.6 12.3z"
+                            class="cls-7" />
+                        <g id="walls">
+                            <path d="m733.56 707.09-6.48 3.24-29.29-14.64 6.48-3.24 29.29 14.64z" class="cls-6" />
+                            <path d="m606.53 741.32-6.48 3.24-33.95-16.97 6.48-3.24 33.95 16.97z" class="cls-10" />
+                            <path
+                                d="m795.43 738.02-6.48 3.24-29.29-14.64 6.48-3.24 29.29 14.64zM727.01 772.23l-6.48 3.24-29.29-14.64 6.48-3.24 29.29 14.64zM665.15 741.3l-6.48 3.24-29.29-14.65 6.48-3.23 29.29 14.64zM869.57 605.14l-6.47 3.24-29.29-14.64 6.47-3.24 29.29 14.64z"
+                                class="cls-6" />
+                            <path
+                                d="m1250.49 684.8-6.48 3.24-75.93-37.97 6.48-3.24 75.93 37.97zM1040.73 560.26l6.47 3.24-101.17 50.58-6.47-3.24 101.17-50.58zM916.74 628.73l-6.47 3.24-47.18-23.59 6.48-3.24 47.17 23.59zM840.28 590.5l-6.48 3.24-60.69-30.35 6.49-3.24 60.68 30.35z"
+                                class="cls-10" />
+                            <path
+                                d="m923.01 488.44-149.89 74.95-6.49-3.24 149.9-74.95 6.48 3.24zM1066.64 553.77l-6.48 3.24-143.63-71.81 6.48-3.24 143.63 71.81zM797.72 678.3l-13.35-.2-17.01-8.5-.39-6.68 30.75 15.38zM833.81 593.73l-182.88 91.44-24.92-12.46-49.02 24.51-6.48-3.24 55.5-27.75 24.92 12.46 176.4-88.19 6.48 3.23zM766.14 723.38l-6.48 3.24-32.58-16.29 6.48-3.24 32.58 16.29zM697.72 757.59l-6.48 3.24-32.57-16.29 6.48-3.24 32.57 16.29zM819.52 750.07l-6.48 3.24-24.09-12.04 6.48-3.25 24.09 12.05zM751.1 784.28l-6.48 3.24-24.09-12.05 6.48-3.24 24.09 12.05z"
+                                class="cls-10" />
+                            <path
+                                d="m697.72 757.59-6.48-3.24 61.94-30.97 6.48 3.24-61.94 30.97zM733.49 775.47l-6.48-3.24 61.94-30.97 6.48 3.24-61.94 30.97zM873.91 722.88 645.85 836.9l-6.47-3.23 228.06-114.03 6.47 3.24zM671.62 744.54l-6.47-3.24 61.93-30.97 6.48 3.24-61.94 30.97zM773.42 666.15l-6.48-3.24 29.63-21.27 6.48 3.24-29.63 21.27zM832.34 630.24l-6.48-3.24 37.23-18.62 6.48 3.24-37.23 18.62z"
+                                class="cls-10" />
+                            <path
+                                d="m946.03 614.08-29.29 14.65-6.47-3.24 29.29-14.65 6.47 3.24zM880.3 666.3l-6.48 3.24-29.29-14.65 6.48-3.24 29.29 14.65zM803.05 644.88l-6.48-3.24L825.86 627l6.48 3.23-29.29 14.65zM724.72 648.28l-54.4 27.19-6.47-3.23 54.39-27.2 6.48 3.24z"
+                                class="cls-6" />
+                            <path
+                                d="m584.01 752.58-37.37 18.68-6.48-3.24 37.37-18.68 6.48 3.24zM629.37 729.9l-29.32 14.66-6.48-3.24 29.32-14.67 6.48 3.25zM601.91 716.16l-82.73 41.37-6.48-3.24 6.48-3.24 76.25-38.13 6.48 3.24z"
+                                class="cls-10" />
+                            <path
+                                d="m546.65 771.26-16.04 8.02-6.48-3.24 16.04-8.02 6.48 3.24zM519.18 773.57l-6.48 3.24-22.52-11.26 6.48-3.24 22.52 11.26zM546.65 764.79l-6.48 3.23-27.47-13.73 6.48-3.24 27.47 13.74zM645.85 836.9l-6.48 3.24-46.9-23.45 6.48-3.24 46.9 23.45z"
+                                class="cls-10" />
+                            <path d="m569.65 798.8-6.47 3.24-50.48-25.23 6.48-3.24 50.47 25.23z" class="cls-10" />
+                            <path d="m598.95 813.46-6.48 3.23-29.29-14.64 6.47-3.24 29.3 14.65z" class="cls-6" />
+                            <path
+                                d="m519.18 757.53-22.53 11.26-6.47-3.24 22.52-11.26 6.48 3.24zM465.26 753.09l-17.19 8.59-6.48-3.24 17.19-8.59 6.48 3.24z"
+                                class="cls-10" />
+                            <path
+                                d="m487.78 741.83-22.52 11.26-6.48-3.24 22.52-11.26 6.48 3.24zM525.65 754.29l-6.47 3.24-37.88-18.94 6.48-3.24 37.87 18.94z"
+                                class="cls-10" />
+                            <path d="m576.99 697.22-82.73 41.37-6.48-3.24 82.73-41.37 6.48 3.24z" class="cls-10" />
+                            <path d="m570.51 700.46 6.48-3.24 24.92 12.46-6.48 3.24-24.92-12.46z" class="cls-6" />
+                            <path
+                                d="m704.28 692.45-74.9 37.45-33.95-16.98 6.48-3.23 27.46 13.73 61.94-30.97-27.46-13.73 6.48-3.25 33.95 16.98z"
+                                class="cls-10" />
+                            <path
+                                d="m546.65 771.26-16.04 8.02-6.48-3.24 16.04-8.02 6.48 3.24zM519.18 773.57l-6.48 3.24-16.04-8.02 6.47-3.24 16.05 8.02z"
+                                class="cls-6" />
+                            <path
+                                d="M1358.02 631.04 1030.6 794.75l-6.47-3.24 115.9-57.96 54.55-27.26 156.97-78.49 6.47 3.24zM1089.4 722.91 988.02 773.6l-6.48-3.24 101.38-50.69 6.48 3.24zM1156.45 689.38l-60.57 30.29-6.48-3.24 60.58-30.29 6.47 3.24z"
+                                class="cls-10" />
+                            <path d="m1194.81 706.4-36.2-18.1 6.48-3.24 36.2 18.1-6.48 3.24z" class="cls-10" />
+                            <path
+                                d="m1149.98 686.14 45.12-22.56 6.48 3.24-45.13 22.56-6.47-3.24zM1258.94 611.12l-159.25 79.63-6.48-3.24 159.25-79.63 6.48 3.24zM1315.58 609.82l-45.67 22.83-6.48-3.24 45.67-22.83 6.48 3.24z"
+                                class="cls-10" />
+                            <path
+                                d="m1302.38 655.36-65.96-32.98 6.48-3.23 65.96 32.97-6.48 3.24zM1018.47 604.87l-38.95 19.48-6.47-3.24 38.94-19.47 6.48 3.23zM1059.51 631.87l-32.46 16.24-6.48-3.24 32.46-16.23 6.48 3.23zM1209.6 556.83l-42.23 21.12-6.48-3.24 42.23-21.12 6.48 3.24zM1180.36 542.21l-74.91 37.45-6.47-3.24 74.91-37.45 6.47 3.24z"
+                                class="cls-10" />
+                            <path d="m1138.47 664.88-6.47 3.24-120.01-60.01 6.48-3.24 120 60.01z" class="cls-10" />
+                            <path
+                                d="m1065.3 628.98-6.47-3.24 75.87-37.94 6.48 3.24-75.88 37.94zM1168.02 650.1l-6.47 3.24-72.49-36.24 6.48-3.24 72.48 36.24z"
+                                class="cls-10" />
+                            <path
+                                d="m1118.06 625.12-29.51 14.76-6.48-3.24 29.51-14.76 6.48 3.24zM988.02 773.59l-6.34 3.17-6.47-3.24 6.34-3.16 6.47 3.23zM1364.5 627.8l-6.48 3.23-275.48-137.74 6.48-3.24 68.58 34.3 58.48 29.24 148.42 74.21zM1138.32 740.89l-6.48 3.24-48.92-24.46 6.48-3.24 48.92 24.46zM1004.53 636.85l-6.48 3.24-52.02-26.01 6.48-3.24 52.02 26.01zM1133.02 701.1l-6.48 3.23-112.45-56.22 6.48-3.24 112.45 56.23zM1072.98 504.55l-52.39 26.2-6.48-3.24 52.39-26.2 6.48 3.24z"
+                                class="cls-10" />
+                            <path d="m1020.59 530.75-.15.08-6.49-3.25.16-.07 6.48 3.24z" class="cls-10" />
+                            <path
+                                d="m1089.01 496.53-16.04 8.02-6.47-3.24 16.04-8.02 6.47 3.24zM1125.85 704.68l-29.28 14.64-6.48-3.23 29.29-14.65 6.47 3.24zM1088.71 723.25l-29.29 14.64-6.47-3.23 29.29-14.65 6.47 3.24zM1194.58 706.28l-16.04-8.02 6.47-3.24 16.04 8.02-6.47 3.24z"
+                                class="cls-6" />
+                            <path
+                                d="m1056.39 775.61-36.2-18.1 6.48-3.24 36.19 18.1-6.47 3.24zM1030.53 794.78l-.08.04-197.25-98.63 53.44-26.72-6.35-3.18-59.76 29.88 161.16 80.58-54 27 67.03 33.52 60.4-30.2-24.59-12.3Zm-35.81 36.02-54.08-27.04L988.16 780l35.96 17.98-.08.04 18.11 9.06-47.44 23.72Z"
+                                class="cls-10" />
+                            <path
+                                d="m1056.15 775.49-16.04-8.02 6.48-3.24 16.04 8.03-6.48 3.23zM1244.01 688.04l-16.04 8.02-6.47-3.23 16.04-8.03 6.47 3.24zM1179.05 671.6l16.05-8.02 6.47 3.24-16.04 8.02-6.48-3.24zM957 613.09l16.04 8.02-6.47 3.24-16.04-8.02 6.47-3.24zM1059.51 631.87l-16.04 8.02-6.47-3.23 16.04-8.02 6.47 3.23zM1134.69 594.29l-16.04 8.02-6.48-3.24 16.04-8.02 6.48 3.24zM1075.55 639.89l-16.04-8.02 6.48-3.23 16.04 8.02-6.48 3.23zM1105.1 625.12l-16.04-8.02 6.48-3.24 16.04 8.02-6.48 3.24zM1082.07 636.64l16.43-8.22 6.48 3.24-16.44 8.22-6.47-3.24z"
+                                class="cls-6" />
+                            <path d="m1163.97 602.41-29.52 14.75-6.48-3.23 29.52-14.76 6.48 3.24z" class="cls-10" />
+                            <path
+                                d="m1127.97 613.93 16.44-8.22 6.48 3.24-16.43 8.22-6.49-3.24zM1105.46 573.18l16.04-8.02 6.48 3.24-16.04 8.02-6.48-3.24zM1060.02 557.09l-16.04 8.02-6.48-3.24 16.04-8.02 6.48 3.24zM1181.04 650.08l16.04 8.02-6.47 3.23-16.05-8.02 6.48-3.23zM1242.9 619.15l16.04 8.02-6.48 3.23-16.04-8.02 6.48-3.23zM1301.99 616.61l-16.04 8.02-6.47-3.24 16.04-8.02 6.47 3.24zM1046.5 786.8l-16.04 8.02-6.47-3.24 16.03-8.02 6.48 3.24z"
+                                class="cls-6" />
+                            <path d="m797.67 678.28-6.48-3.24 112.6-46.31 6.48 3.24-112.6 46.31z" class="cls-10" />
+                            <path d="m981.68 770.29-6.47 3.23-58.58-29.28 6.48-3.24 58.57 29.29z" class="cls-6" />
+                            <path
+                                d="m1128.22 591.05-68.06-34.03 6.49-3.24 68.05 34.02-6.48 3.25zM1207.18 630.53l-49.73-24.86 6.48-3.25 49.74 24.86-6.49 3.25z"
+                                class="cls-10" />
+                            <path
+                                d="m1285.81 588.45-6.48 3.24-30.75-15.38 6.48-3.24 30.75 15.38zM1246.84 568.96l-6.48 3.24-30.75-15.37 6.48-3.24 30.75 15.37zM1066.65 553.78l16.04 8.02-6.48 3.24-16.04-8.02 6.48-3.24zM1157.6 524.35l-6.47 3.24-16.04-8.03 6.47-3.23 16.04 8.02zM1190.24 615.58l16.44 8.22-6.48 3.23-16.43-8.21 6.47-3.24zM982.4 824.64l-6.47 3.24-29.29-14.65 6.47-3.24 29.29 14.65zM588.62 738.85l-16.04-8.02 6.48-3.24 16.04 8.02-6.48 3.24zM572.58 724.35l16.04-8.02 6.47 3.24-16.04 8.02-6.47-3.24z"
+                                class="cls-6" />
+                        </g>
+                    </g>
+                    <g id="bottom_rooms">
+                        <g id="lavendelzaal">
+                            <path d="m922.65 488.4 130.9 65.45-9.35 4.66-133.94 66.97-130.88-65.44 143.27-71.64z"
+                                class="cls-23" /><text class="cls-2"
+                                transform="matrix(.89439 -.4473 .89439 .44718 882.68 573.94)">
+                                <tspan x="0" y="0">L</tspan>
+                                <tspan x="6.97" y="0" style="letter-spacing:-.02em">a</tspan>
+                                <tspan x="13.78" y="0" style="letter-spacing:-.02em">v</tspan>
+                                <tspan x="20.75" y="0">endelzaal</tspan>
+                            </text></g>
+                        <g id="parkzaal">
+                            <path d="m833.2 696.19 138.53-69.26 148.34 74.17-138.38 69.19-148.49-74.1z"
+                                class="cls-23" /><text class="cls-2"
+                                transform="matrix(.89439 -.4473 .89439 .44718 956.9 712.11)">
+                                <tspan x="0" y="0" style="letter-spacing:-.02em">P</tspan>
+                                <tspan x="8.09" y="0" style="letter-spacing:0">arkzaal</tspan>
+                            </text></g>
+                        <g id="suite_1">
+                            <path d="m1026.67 754.27 62.73-31.36 35.96 17.98-62.73 31.37-35.96-17.99z" class="cls-23" />
+                            <text class="cls-2" transform="matrix(.89439 -.4473 .89439 .44718 1063.32 759.74)">
+                                <tspan x="0" y="0">Suite 1</tspan>
+                            </text></g>
+                        <g id="suite_2">
+                            <path d="m1095.88 719.67 62.73-31.37 35.97 17.98-62.74 31.37-35.96-17.98z" class="cls-23" />
+                            <text class="cls-2" transform="matrix(.89439 -.4473 .89439 .44718 1132.53 725.13)">
+                                <tspan x="0" y="0">Suite 2</tspan>
+                            </text></g>
+                        <g id="entree">
+                            <path
+                                d="m867.44 719.64-46.91-23.46 53.29-26.64-24.78-12.39-51.37 21.13-13.3-.18-17.01-8.5-.42-6.69 29.63-21.27 66.52-33.26-29.28-14.65-163.48 81.74 142.72 71.36 54.39-27.19z"
+                                class="cls-23" /><text class="cls-2"
+                                transform="matrix(.89439 -.4473 .89439 .44718 776.57 708.25)">
+                                <tspan x="0" y="0">Entree</tspan>
+                            </text></g>
+                        <g id="buitenplaats">
+                            <path
+                                d="m873.91 722.88 107.78 53.88-54 27 67.03 33.52-214.33 107.15-323.99-162 33.78-16.88 149.19 74.6 234.54-117.27z"
+                                class="cls-23" /><text
+                                style="font-family:Lato-Bold,Lato;font-weight:700;fill:#5d576b;font-size:20.8px"
+                                transform="matrix(.89439 -.4473 .89439 .44718 765.67 865.78)">
+                                <tspan x="0" y="0">Buitenplaats</tspan>
+                            </text></g>
+                        <g id="ontvangstzaal">
+                            <path d="m530.61 779.28 98.77-49.38 108.77 54.38-98.77 49.39-108.77-54.39z"
+                                class="cls-23" /><text class="cls-2"
+                                transform="matrix(.89439 -.4473 .89439 .44718 606.56 796.33)">
+                                <tspan x="0" y="0">Ontvangst</tspan>
+                                <tspan x="19.77" y="16.17">zaal</tspan>
+                            </text></g>
+                        <g id="berging_2">
+                            <path d="m1269.91 632.65 45.67-22.83 35.97 17.98-45.44 22.95-36.2-18.1z" class="cls-23" />
+                            <text class="cls-4" transform="matrix(.89439 -.4473 .89439 .44718 1299.73 637.66)">
+                                <tspan x="0" y="0">Berging</tspan>
+                            </text></g>
+                        <g id="garage">
+                            <path
+                                d="m1111.58 621.88-16.04-8.02 114.07-57.03 99.49 49.75-45.67 22.83-20.53-10.26 16.04-8.03-6.48-3.24-38.79 19.4-56.18-28.11-45.91 22.71z"
+                                class="cls-23" /><text class="cls-2"
+                                transform="matrix(.89439 -.4473 .89439 .44718 1201.58 603.76)">
+                                <tspan x="0" y="0">Ga</tspan>
+                                <tspan x="16.8" y="0" style="letter-spacing:-.01em">r</tspan>
+                                <tspan x="22.11" y="0">age</tspan>
+                            </text></g>
+                        <g id="verzorging">
+                            <path d="m1118.06 625.12 39.39-19.45 49.73 24.86-39.16 19.57-49.96-24.98z" class="cls-23" />
+                            <text class="cls-4" transform="matrix(.89439 -.4473 .89439 .44718 1145.83 637.75)">
+                                <tspan x="0" y="0" style="letter-spacing:-.06em">V</tspan>
+                                <tspan x="5.41" y="0" style="letter-spacing:0">erzorging</tspan>
+                            </text></g>
+                        <g id="berging_1">
+                            <path
+                                d="m957 613.09-4.49-2.25 107.66-53.82 66.11 33.2-67.45 35.52-46.84-24.1-38.95 19.47-16.04-8.02z"
+                                class="cls-23" /><text class="cls-2"
+                                transform="matrix(.89439 -.4473 .89439 .44718 1046.97 605.67)">
+                                <tspan x="0" y="0">Berging</tspan>
+                            </text></g>
+                        <g id="kantine">
+                            <path
+                                d="m1043.47 639.89-16.42 8.22 72.48 36.24 32.47-16.23-56.45-28.23-16.04-8.02-16.04 8.02z"
+                                class="cls-23" /><text class="cls-4"
+                                transform="matrix(.89439 -.4473 .89439 .44718 1069 666.1)">
+                                <tspan x="0" y="0">Kantine</tspan>
+                            </text></g>
+                        <g id="koelcel">
+                            <path d="m1020.59 530.75 68.42-34.22 84.88 42.44-68.43 34.21-84.87-42.43z" class="cls-23" />
+                            <text class="cls-2" transform="matrix(.89439 -.4473 .89439 .44718 1080.77 546.71)">
+                                <tspan x="0" y="0" style="letter-spacing:-.02em">K</tspan>
+                                <tspan x="9.12" y="0">oelcel</tspan>
+                            </text></g>
+                    </g>
+                    <path id="bottom_path_1"
+                        style="stroke-dasharray:2970; stroke-dashoffset:2970;" data-length="2970"
+                        d="m253.82 753.58 290.7-145.35 172.37 86.18-163.81 81.91-22.43-11.22-12.07 6.04 31.35 15.68 198.74-99.37v-27.87l132.99-66.5 206.69 103.34-122.3 61.15 9.45 4.72 122.29-61.15 51.08 25.55 67.81-33.91-9.72-4.86-61.54 30.77-187-93.5 94.41-47.2-9.27-4.64-96.9 48.45L999 647.97l38.33-19.17 22.18 11.09 53.69-26.84 52.04-26.02h70.39l82.68 41.34-9.15 4.58-82.52-41.27h-54.04l-29.24-14.61 34.99-17.5"
+                        class="cls-15" />
+                    <path id="bottom_path_2"
+                        style="stroke-dasharray:1126; stroke-dashoffset:1126;" data-length="1126"
+                        d="m1169.52 555.41-43.16 21.58 33.24 16.61-91.95 45.98-31.44-15.72-56.51 28.26-120.47-60.24-166.18 83.1-165.16-82.58-298.21 149.1"
+                        class="cls-15" />
+                    <g id="top">
+                        <g id="top_floor">
+                            <g id="floor-3">
+                                <path
+                                    d="m1115.36 537.43 27.72-13.86 60 30-27.72 13.85-60-29.99zM1351.54 627.8l-77.9 38.95-117.09-58.56-24.84-12.42 77.89-38.94 141.94 70.97zM1136.6 520.33l-77.9 38.95-39.25-19.64-8.33-4.16 77.89-38.95 47.59 23.8z"
+                                    class="cls-7" />
+                            </g>
+                            <g id="walls-2">
+                                <path d="m1122.97 507.03 241.54 120.77-241.54-120.77Z" class="cls-7" />
+                                <path
+                                    d="m1364.5 627.8-6.48 3.24-275.49-137.75 6.48-3.24 33.96 16.98 235.05 117.53 6.48 3.24zM1358.02 631.04l-77.9 38.95-6.48-3.24 77.9-38.95 6.48 3.24z"
+                                    class="cls-10" />
+                                <path
+                                    d="m1089.02 496.53-77.9 38.95-6.48-3.24 77.89-38.95 6.49 3.24zM1209.55 556.81l-77.89 38.94-6.48-3.24 77.9-38.94 6.47 3.24zM1143.08 523.57l-77.9 38.94-6.47-3.23 77.89-38.95 6.48 3.24z"
+                                    class="cls-10" />
+                                <path
+                                    d="m1108.88 540.67-16.04 8.02-6.48-3.24 16.04-8.02 6.48 3.24zM1175.36 573.9l-16.04 8.03-6.48-3.24 16.04-8.02 6.48 3.23z"
+                                    class="cls-6" />
+                                <path d="m1108.88 540.67 6.48-3.24 60 30-6.48 3.23-60-29.99z" class="cls-10" />
+                                <path d="m1130.07 551.26 6.48-3.24 16.04 8.02-6.47 3.24-16.05-8.02z" class="cls-6" />
+                                <path
+                                    d="m1280.12 669.99-6.48 3.24-33.95-16.98-241.53-120.77 6.48-3.24 142.79 71.4 126.21 63.11 6.48 3.24z"
+                                    class="cls-10" />
+                            </g>
+                        </g>
+                        <g id="upper_rooms">
+                            <g id="meldkamer">
+                                <path d="m1131.71 595.77 77.89-38.94 141.94 70.97-77.9 38.95-141.93-70.98z"
+                                    class="cls-23" /><text class="cls-2"
+                                    transform="matrix(.89439 -.4473 .89439 .44718 1212.01 628.11)">
+                                    <tspan x="0" y="0">Meldkamer</tspan>
+                                </text></g>
+                            <g id="kantoor">
+                                <path d="m1011.12 535.48 77.9-38.95 47.58 23.8-77.9 38.95-47.58-23.8z" class="cls-23" />
+                                <text class="cls-2" transform="matrix(.89439 -.4473 .89439 .44718 1058.76 542.79)">
+                                    <tspan x="0" y="0">Kantoor</tspan>
+                                </text></g>
+                        </g>
+                        <path id="upper"
+                            style="stroke-dasharray:389; stroke-dashoffset:389;" data-length="389"
+                            d="m1151.4 565.18-63.51-31.76-22.95 11.48-19.85-9.92 18.19-9.09 108.84 54.42 34.71-17.35 10.63 5.32-33.03 16.51-36.14-18.06"
+                            class="cls-15" />
+                    </g>
+                </g>
+            </svg>
+        </div>
+        <div class="app__column">
+            <div class="app__column--content">
+                <div class="js-controls">
+                    <button class="prev"><</button>
+                    <button class="next">></button>
+                </div>
+                <section class="js-step">
+                    <h1>Intro</h1>
+                    <p>
+                        Soms raakt het werk je. Soms moet je kunnen luchten.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                </section> 
+                <section class="js-step">
+                    <h1>Begroeting</h1>
+                    <p>
+                        Soms raakt het werk je. Soms moet je kunnen luchten.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                </section>
+                <section class="js-step">
+                    <h1>Ontvangstzaal</h1>
+                    <p>
+                        Soms raakt het werk je. Soms moet je kunnen luchten.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                </section>
+                <section class="js-step">
+                    <h1>Entree</h1>
+                    <p>
+                        Soms raakt het werk je. Soms moet je kunnen luchten.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                </section>
+                <section class="js-step">
+                    <h1>Lavendelzaal</h1>
+                    <p>
+                        Soms raakt het werk je. Soms moet je kunnen luchten.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                </section>
+                <section class="js-step">
+                    <h1>Parkzaal</h1>
+                    <p>
+                        Soms raakt het werk je. Soms moet je kunnen luchten.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                </section>
+                <section class="js-step">
+                    <h1>Parkzaal</h1>
+                    <p>
+                        Soms raakt het werk je. Soms moet je kunnen luchten.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                </section>
+                <section class="js-step">
+                    <h1>Suites</h1>
+                    <p>
+                        Soms raakt het werk je. Soms moet je kunnen luchten.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                </section>
+                <section class="js-step">
+                    <h1>Berging</h1>
+                    <p>
+                        Soms raakt het werk je. Soms moet je kunnen luchten.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                </section>
+                <section class="js-step">
+                    <h1>Koelcel</h1>
+                    <p>
+                        Soms raakt het werk je. Soms moet je kunnen luchten.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                </section>
+                <section class="js-step">
+                    <h1>Kantine</h1>
+                    <p>
+                        Soms raakt het werk je. Soms moet je kunnen luchten.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                </section>
+                <section class="js-step">
+                    <h1>Garage</h1>
+                    <p>
+                        Soms raakt het werk je. Soms moet je kunnen luchten.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                </section>
+                <section class="js-step">
+                    <h1>Berging</h1>
+                    <p>
+                        Soms raakt het werk je. Soms moet je kunnen luchten.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                </section>
+                <section class="js-step">
+                    <h1>Boven</h1>
+                    <p>
+                        Soms raakt het werk je. Soms moet je kunnen luchten.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                </section>
+                <section class="js-step">
+                    <h1>Kantoor</h1>
+                    <p>
+                        Soms raakt het werk je. Soms moet je kunnen luchten.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                </section>
+                <section class="js-step">
+                    <h1>Meldkamer</h1>
+                    <p>
+                        Soms raakt het werk je. Soms moet je kunnen luchten.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                </section>
+                <section class="js-step">
+                    <h1>Naar beneden</h1>
+                    <p>
+                        Soms raakt het werk je. Soms moet je kunnen luchten.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                </section>
+                <section class="js-step">
+                    <h1>Verzorging</h1>
+                    <i>
+                        Soms raakt het werk je. Soms moet je kunnen luchten.
+                    </i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                </section>
+                <section class="js-step">
+                    <h1>Gedag</h1>
+                    <p>
+                        Soms raakt het werk je. Soms moet je kunnen luchten.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ex eu tellus tincidunt condimentum eleifend in purus. Curabitur pellentesque facilisis mi, vitae iaculis justo vulputate eu. Suspendisse ac risus id tellus scelerisque sodales vitae at turpis. Pellentesque at nulla neque. Sed volutpat, nisi vel dictum lobortis, arcu urna posuere felis, a porttitor lectus lacus non magna. Integer dapibus neque ipsum, ac euismod ligula varius sed. Vestibulum feugiat lorem a nisl ultrices, in dapibus justo sodales. Donec luctus ullamcorper libero. Donec at ante justo. Phasellus sit amet nisl ac ligula eleifend pretium sit amet vel arcu. Nunc sit amet sem ut sem lacinia lobortis. Aliquam auctor libero a massa semper, sit amet ultricies arcu facilisis. Integer efficitur sapien erat, non lobortis elit ultricies nec. Phasellus ac vehicula ipsum. </p>
+                </section>
+                <section class="js-step">
+                    <h1>Soms raakt het je gewoon</h1>
+                    <i>
+                        "Soms raakt het werk je. Soms moet je kunnen luchten. Schouders eronder en door"
+                    </i>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

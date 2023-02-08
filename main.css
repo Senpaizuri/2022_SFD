@@ -1,0 +1,423 @@
+*,*:after,*:before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h3{
+    font-size: 1rem;
+}
+
+h3,h4,h5,h6{
+    font-weight: 300;
+}
+
+.app__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f2f2f2;
+    z-index: 99;
+    transition: .3s ease opacity;
+}
+
+.app__overlay--close{
+    position: absolute;
+    bottom: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.app__overlay section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+#logo{
+    max-width: 10rem;
+    color: #424242;
+    margin: auto;
+}
+
+.app__content{
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.app__content #logo{
+    color: black;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    z-index: 2;
+}
+
+.app__column{
+    position: relative;
+    flex-basis: 60%;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.app__column:last-child{
+    flex-basis: 40%;
+    background-color: #f1f1f1;
+}
+
+.app__column--content{
+    overflow-y: scroll;
+    max-height: 100vh;
+    padding: 8rem 3rem 3rem 3rem;
+}
+
+.app__column--content section{
+    max-width: 30rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    display: none;
+}
+
+.app__column--content section h1{
+    margin-bottom: 1.5rem;
+    color: rgb(122, 98, 132);
+    font-size: 2rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.app__column--content section i{
+    text-align: center;
+}
+
+.app__column--content section p + p,
+.app__column--content section i + p{
+    margin-top: 1rem;
+}
+
+.js-controls{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.map{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,-50%) scale(.9);
+    transition: .66s ease all;
+    transition-delay: .3s;
+}
+
+.cls-15{
+    transition: 1s ease all;
+}
+
+.map g{
+    transition: .5s ease all;
+}
+#bottom_rooms > g,
+#upper_rooms > g{
+    opacity: 0;
+}
+
+#top{
+    opacity: 0;
+}
+
+[data-step="13"] #bottom_floor,
+[data-step="14"] #bottom_floor,
+[data-step="15"] #bottom_floor,
+[data-step="16"] #bottom_floor{
+    opacity: .5;
+    transition-delay: 1s;
+}
+[data-step="13"] #top,
+[data-step="14"] #top,
+[data-step="15"] #top,
+[data-step="16"] #bottom_floor
+{
+    opacity: 1;
+    transition-delay: 1s;
+}
+
+[data-step="16"] #top{
+    opacity: 0;
+    transition-delay: 1s;
+}
+
+[data-step="1"] #entree,
+[data-step="2"] #ontvangstzaal,
+[data-step="3"] #entree,
+[data-step="4"] #lavendelzaal,
+[data-step="5"] #parkzaal,
+[data-step="6"] #parkzaal,
+[data-step="7"] #suite_1,
+[data-step="7"] #suite_2,
+[data-step="8"] #berging_1,
+[data-step="9"] #berging_1,
+[data-step="9"] #koelcel,
+[data-step="10"] #kantine,
+[data-step="11"] #garage,
+[data-step="12"] #berging_2,
+[data-step="14"] #kantoor,
+[data-step="15"] #meldkamer,
+[data-step="17"] #verzorging
+{
+    opacity: 1;
+} 
+
+.map g:hover{
+    opacity: 1;
+}
+
+[data-step="0"] .map{
+    transform: translate(-20%,-90%) scale(2);
+}
+[data-step="0"] section:nth-child(2){
+    display: block;
+}
+
+[data-step="1"] .map{
+    transform: translate(-20%,-90%) scale(3);
+}
+[data-step="1"] #bottom_path_1{
+    stroke-dashoffset: 2453 !important;
+}
+[data-step="1"] section:nth-child(3){
+    display: block;
+}
+
+
+[data-step="2"] .map{
+    transform: translate(55%,-200%) scale(6);
+}
+[data-step="2"] #bottom_path_1{
+    stroke-dashoffset: 2300 !important;
+}
+[data-step="2"] section:nth-child(4){
+    display: block;
+}
+
+[data-step="3"] .map{
+    transform: translate(9%,-150%) scale(6);
+}
+[data-step="3"] #bottom_path_1{
+    stroke-dashoffset: 1975 !important;
+}
+[data-step="3"] section:nth-child(5){
+    display: block;
+}
+
+[data-step="4"] .map{
+    transform: translate(-35%,-80%) scale(6);
+}
+[data-step="4"] #bottom_path_1{
+    stroke-dashoffset: 1800 !important;
+}
+[data-step="4"] section:nth-child(6){
+    display: block;
+}
+
+[data-step="5"] .map{
+    transform: translate(-55%,-150%) scale(6);
+}
+[data-step="5"] #bottom_path_1{
+    stroke-dashoffset: 1650 !important;
+}
+[data-step="5"] section:nth-child(7){
+    display: block;
+}
+
+[data-step="6"] .map{
+    transform: translate(-55%,-250%) scale(8);
+}
+[data-step="6"] #bottom_path_1{
+    stroke-dashoffset: 1430 !important;
+}
+[data-step="6"] section:nth-child(8){
+    display: block;
+}
+
+[data-step="7"] .map{
+    transform: translate(-120%,-200%) scale(7);
+}
+[data-step="7"] #bottom_path_1{
+    stroke-dashoffset: 1230 !important;
+}
+[data-step="7"] section:nth-child(9){
+    display: block;
+}
+
+[data-step="8"] .map{
+    transform: translate(-80%,-110%) scale(6);
+}
+[data-step="8"] #bottom_path_1{
+    stroke-dashoffset: 830 !important;
+}
+[data-step="8"] section:nth-child(10){
+    display: block;
+}
+
+[data-step="9"] .map{
+    transform: translate(-80%,-110%) scale(6);
+}
+[data-step="9"] #bottom_path_1{
+    stroke-dashoffset: 755 !important;
+}
+[data-step="9"] section:nth-child(11){
+    display: block;
+}
+
+[data-step="10"] .map{
+    transform: translate(-110%,-160%) scale(8);
+}
+[data-step="10"] #bottom_path_1{
+    stroke-dashoffset: 510 !important;
+}
+[data-step="10"] section:nth-child(12){
+    display: block;
+}
+
+[data-step="11"] .map{
+    transform: translate(-140%,-130%) scale(7);
+}
+[data-step="11"] #bottom_path_1{
+    stroke-dashoffset: 410 !important;
+}
+[data-step="11"] section:nth-child(13){
+    display: block;
+}
+
+[data-step="12"] .map{
+    transform: translate(-190%,-140%) scale(8);
+}
+[data-step="12"] #bottom_path_1{
+    stroke-dashoffset: 230 !important;
+}
+[data-step="12"] section:nth-child(14){
+    display: block;
+}
+
+[data-step="13"] .map{
+    transform: translate(-110%,-100%) scale(5);
+}
+[data-step="13"] #bottom_path_1{
+    stroke-dashoffset: 0 !important;
+    opacity: .5;
+    transition: .5s ease all, 1s ease opacity;
+}
+[data-step="13"] section:nth-child(15){
+    display: block;
+}
+
+[data-step="14"] .map{
+    transform: translate(-110%,-100%) scale(5);
+}
+[data-step="14"] #bottom_path_1{
+    stroke-dashoffset: 0 !important;
+    opacity: 0;
+}
+[data-step="14"] #upper{
+    stroke-dashoffset: 300 !important;
+}
+[data-step="14"] section:nth-child(16){
+    display: block;
+}
+
+[data-step="15"] .map{
+    transform: translate(-110%,-100%) scale(5);
+}
+[data-step="15"] #bottom_path_1{
+    stroke-dashoffset: 0 !important;
+    opacity: 0;
+}
+[data-step="15"] #upper{
+    stroke-dashoffset: 100 !important;
+}
+[data-step="15"] section:nth-child(17){
+    display: block;
+}
+
+[data-step="16"] .map{
+    transform: translate(-110%,-100%) scale(5);
+}
+[data-step="16"] #bottom_path_1{
+    stroke-dashoffset: 0 !important;
+    opacity: .1;
+    transition: .5s ease all, 1s ease opacity;
+}
+[data-step="16"] #upper{
+    stroke-dashoffset: 0 !important;
+}
+[data-step="16"] #bottom_path_2{
+    stroke-dashoffset: 1100 !important;
+}
+[data-step="16"] section:nth-child(18){
+    display: block;
+}
+
+[data-step="17"] .map{
+    transform: translate(-135%,-140%) scale(8);
+}
+[data-step="17"] #bottom_path_1{
+    stroke-dashoffset: 0 !important;
+    opacity: .1;
+}
+[data-step="17"] #bottom_path_2{
+    stroke-dashoffset: 1000 !important;
+}
+[data-step="17"] section:nth-child(19){
+    display: block;
+}
+
+[data-step="18"] .map{
+    transform: translate(-20%,-90%) scale(2);
+    transition-duration: 1.5s;
+}
+[data-step="18"] #bottom_path_1{
+    stroke-dashoffset: 0 !important;
+    opacity: .1;
+}
+[data-step="18"] #bottom_path_2{
+    stroke-dashoffset: 0 !important;
+    transition-duration: 3s;
+}
+[data-step="18"] section:nth-child(20){
+    display: block;
+}
+
+[data-step="19"] #bottom_path_1,
+[data-step="19"] #bottom_path_2{
+    opacity: 0;
+    transition: 0 linear all, 1s ease opacity;
+}
+[data-step="19"] section:nth-child(21){
+    display: block;
+}
+
+
