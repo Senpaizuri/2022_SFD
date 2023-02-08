@@ -8,18 +8,28 @@ const hideParent = (element)=>{
     element.parentElement.classList.add('hidden')
 }
 
-const nextStep = document.querySelector('.next')
-const prevStep = document.querySelector('.prev')
+const nextStep = document.querySelectorAll('.next')
+const prevStep = document.querySelectorAll('.prev')
 const mapContainer = document.querySelector('[data-step]')
 let curStep = 0
 
-nextStep.addEventListener('click',()=>{
-    changeStep(1)
-})
+nextStep.forEach(button=>
+    button.addEventListener('click',()=>{
+        if(curStep < 18){
+            changeStep(1)
+        }else{
+            changeStep(1,true)
+        }
+    })
+)
 
-prevStep.addEventListener('click',()=>{
-    curStep !== 0 && changeStep(-1)
-})
+prevStep.forEach(button=>
+    button.addEventListener('click',()=>{
+        if(curStep !== 0){
+            changeStep(-1)
+        }
+    })
+)
 
 const changeStep = (value,reset = false)=>{
     reset ? curStep = 0 : curStep += value

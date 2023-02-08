@@ -19,6 +19,10 @@ h3,h4,h5,h6{
     font-weight: 300;
 }
 
+.me{
+    padding-left: 1rem;
+}
+
 .app__overlay{
     position: absolute;
     top: 0;
@@ -84,7 +88,7 @@ h3,h4,h5,h6{
 }
 
 .app__column--content section{
-    max-width: 30rem;
+    max-width: 25rem;
     margin: auto;
     margin-bottom: 2rem;
     display: none;
@@ -99,23 +103,27 @@ h3,h4,h5,h6{
     text-align: center;
 }
 
-.app__column--content section i{
+.app__column--content section >  i{
     text-align: center;
+    display: block;
+    max-width: 22.5em;
+    margin: auto;
+    font-size: .9em;
 }
 
-.app__column--content section p + p,
-.app__column--content section i + p{
+.app__column--content section p + p{
     margin-top: 1rem;
 }
 
+.app__column--content section i + p{
+    margin-top: 2rem;
+}
+
 .js-controls{
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 3rem;
+    padding: 2rem 0;
 }
 
 .hidden{
@@ -131,6 +139,13 @@ h3,h4,h5,h6{
     transform: translate(-50%,-50%) scale(.9);
     transition: .66s ease all;
     transition-delay: .3s;
+}
+
+button{
+    background: #990033;
+    color: white;
+    padding: .75rem 1.5rem;
+    border: none;
 }
 
 .cls-15{
@@ -196,7 +211,7 @@ h3,h4,h5,h6{
 }
 
 [data-step="0"] .map{
-    transform: translate(-20%,-90%) scale(2);
+    transform: translate(-45%,-60%) scale(1.5);
 }
 [data-step="0"] section:nth-child(2){
     display: block;
@@ -328,7 +343,7 @@ h3,h4,h5,h6{
 }
 [data-step="13"] #bottom_path_1{
     stroke-dashoffset: 0 !important;
-    opacity: .5;
+    opacity: .25;
     transition: .5s ease all, 1s ease opacity;
 }
 [data-step="13"] section:nth-child(15){
@@ -396,7 +411,7 @@ h3,h4,h5,h6{
 }
 
 [data-step="18"] .map{
-    transform: translate(-20%,-90%) scale(2);
+    transform: translate(-45%,-60%) scale(1.5);
     transition-duration: 1.5s;
 }
 [data-step="18"] #bottom_path_1{
@@ -411,13 +426,10 @@ h3,h4,h5,h6{
     display: block;
 }
 
-[data-step="19"] #bottom_path_1,
-[data-step="19"] #bottom_path_2{
+[data-step="18"] #bottom_path_1,
+[data-step="18"] #bottom_path_2{
     opacity: 0;
-    transition: 0 linear all, 1s ease opacity;
-}
-[data-step="19"] section:nth-child(21){
-    display: block;
+    transition: 0 ease all, 1s ease opacity;
 }
 
 
